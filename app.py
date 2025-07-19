@@ -75,7 +75,7 @@ class DatabaseManager:
         """Créer une nouvelle connexion à chaque appel"""
         try:
             conn = mysql.connector.connect(
-                self.host=host,
+                self.host==host,
                 self.user=user,
                 self.password=password,
                 self.database=database,
