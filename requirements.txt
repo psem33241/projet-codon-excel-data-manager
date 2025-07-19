@@ -1,5 +1,5 @@
 extra-streamlit-components==0.1.71
-mysql-connector-python==9.0.0
+mysql-connector-python==9.3.0
 numpy==2.2.3
 pandas==2.2.3
 pandas-stubs==2.2.3.241126
