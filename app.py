@@ -70,15 +70,15 @@ st.markdown("""
 # Classes pour la gestion des données
 class DatabaseManager:
     @staticmethod
-    def get_connection(self, host=st.secrets["db_host"], user=st.secrets["db_user"],
+    def get_connection(host=st.secrets["db_host"], user=st.secrets["db_user"],
                        password=st.secrets["db_password"], database=st.secrets["db_name"]):
         """Créer une nouvelle connexion à chaque appel"""
         try:
             conn = mysql.connector.connect(
-                self.host==host,
-                self.user==user,
-                self.password==password,
-                self.database==database,
+                host==host,
+                user==user,
+                password==password,
+                database==database,
                 autocommit=True,
                 connection_timeout=10
             )
