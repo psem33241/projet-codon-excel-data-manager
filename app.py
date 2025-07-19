@@ -76,9 +76,9 @@ class DatabaseManager:
         try:
             conn = mysql.connector.connect(
                 self.host==host,
-                self.user=user,
-                self.password=password,
-                self.database=database,
+                self.user==user,
+                self.password==password,
+                self.database==database,
                 autocommit=True,
                 connection_timeout=10
             )
